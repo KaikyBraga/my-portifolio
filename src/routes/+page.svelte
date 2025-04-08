@@ -1,5 +1,37 @@
-<h1>Kaiky Braga</h1>
+<script>
+import { onMount } from "svelte";
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum adipisci laudantium amet molestiae placeat, natus dolor explicabo. Pariatur, distinctio corrupti eligendi enim cumque placeat soluta voluptatibus mollitia maxime, nulla quam.</p>
+let githubData = null;
+let loading = true;
+let error = null;
 
-<img src="images/my_image.jpeg" width="500" height="500" alt="A DOG">
+
+onMount(async () => {
+    try {
+        const response = await fetch("https://api.github.com/users/YOUR_USERNAME");
+        githubData = await response.json();
+    } catch (err) {
+        error = err;
+    }
+    loading = false;
+});
+
+</script>
+
+{#if loading}
+    <p>Loading...</p>
+{:else if error}
+    <p class="error">Something went wrong: {error.message}</p>
+{:else}
+    <section>
+        <h2>My GitHub Stats</h2>
+        <dl>
+            <dt>Followers</dt>
+            <dd>{githubData.followers}</dd>
+            <dt>Following</dt>
+            <dd>{githubData.following}</dd>
+            <dt>Public Repositories</dt>
+            <dd>{githubData.public_repos}</dd>
+        </dl>
+    </section>
+{/if}
