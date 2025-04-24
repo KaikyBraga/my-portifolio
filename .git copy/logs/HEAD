@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 c4b258d638d3b0721eb4be8facee42cda48453ca Mauro Diaz <dany.mauro.diaz.e@gmail.com> 1743615873 -0300	clone: from https://github.com/maurodiaz7/my-portfolio.git
+c4b258d638d3b0721eb4be8facee42cda48453ca 0968366d179ae656213da9d86af568fc0e3e9ee7 Mauro Diaz <dany.mauro.diaz.e@gmail.com> 1743686616 -0300	commit: lab6
+0968366d179ae656213da9d86af568fc0e3e9ee7 36ca478f163a1c560934e2ab6cfdeb43e170284b Mauro Diaz <dany.mauro.diaz.e@gmail.com> 1744046440 -0300	commit: lab 7.0
+36ca478f163a1c560934e2ab6cfdeb43e170284b add3d3ad258d76b2ee9c68ab1be2d3158179b9df Mauro Diaz <dany.mauro.diaz.e@gmail.com> 1744051046 -0300	pull --ff --recurse-submodules --progress origin: Fast-forward
+add3d3ad258d76b2ee9c68ab1be2d3158179b9df 07c20ef7a94cf56e8b5bef776409e95e69214c9e Mauro Diaz <dany.mauro.diaz.e@gmail.com> 1744051239 -0300	commit: remove warning and read csv
