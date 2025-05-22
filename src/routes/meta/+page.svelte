@@ -239,7 +239,7 @@
 		</svg>
 
 		<Bar data={languageBreakdown} width={width} />
-        <FileLines />
+        <FileLines lines={filteredData} {width} />
 		</svelte:fragment>
 	</Scrolly>
     
